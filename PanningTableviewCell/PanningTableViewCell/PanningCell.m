@@ -146,7 +146,7 @@ static NSTimeInterval const kPCDurationHighLimit    = 0.1; // Highest duration w
                      animations:^{
                          [self.topView setFrame:rect];
                      } completion:^(BOOL finished) {
-                         DLog(@"topview: %@",self.topView);
+
                      }];
     
 }
