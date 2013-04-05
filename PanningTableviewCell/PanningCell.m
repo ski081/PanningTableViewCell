@@ -14,7 +14,6 @@ static NSTimeInterval const kPCDurationHighLimit    = 0.1; // Highest duration w
 
 @interface PanningCell ()
 
-@property(strong,nonatomic) UIView                  *topView;
 @property(strong,nonatomic) UIPanGestureRecognizer  *panRecognizer;
 @property(nonatomic,assign) CGFloat                 currentPercentage;
 @property(assign,nonatomic) PCCellState             currentCellState;
@@ -41,7 +40,8 @@ static NSTimeInterval const kPCDurationHighLimit    = 0.1; // Highest duration w
 }
 
 -(void)drawRect:(CGRect)rect{
-    [self.contentView addSubview:self.drawerView];
+    NSAssert(self.topView != nil && self.backingView != nil, @"Top view and backing view must be present");
+    [self.contentView addSubview:self.backingView];
     [self.contentView addSubview:self.topView];
     [self.topView addSubview:self.titleLabel];
     
@@ -51,22 +51,26 @@ static NSTimeInterval const kPCDurationHighLimit    = 0.1; // Highest duration w
     self.topView.layer.shadowOpacity = 1.0f;
 }
 
--(UIView *)drawerView{
-    if (!_drawerView) {
-        _drawerView = [[UIView alloc] initWithFrame:self.contentView.bounds];
-        _drawerView.backgroundColor = [UIColor greenColor];
-    }
-    return _drawerView;
+-(void)layoutSubviews{
+    [self.topView addGestureRecognizer:self.panRecognizer];
 }
 
--(UIView *)topView{
-    if (!_topView) {
-        _topView = [[UIView alloc] initWithFrame:self.contentView.bounds];
-        _topView.backgroundColor = [UIColor redColor];
-        [_topView addGestureRecognizer:self.panRecognizer];
-    }
-    return _topView;
-}
+//-(UIView *)backingView{
+//    if (!_backingView) {
+//        _backingView = [[UIView alloc] initWithFrame:self.contentView.bounds];
+//        _backingView.backgroundColor = [UIColor greenColor];
+//    }
+//    return _backingView;
+//}
+//
+//-(UIView *)topView{
+//    if (!_topView) {
+//        _topView = [[UIView alloc] initWithFrame:self.contentView.bounds];
+//        _topView.backgroundColor = [UIColor redColor];
+//        [_topView addGestureRecognizer:self.panRecognizer];
+//    }
+//    return _topView;
+//}
 
 -(void)panRecognized:(UIPanGestureRecognizer *)gesture{
     switch (gesture.state) {
@@ -133,6 +137,8 @@ static NSTimeInterval const kPCDurationHighLimit    = 0.1; // Highest duration w
     if (cellState == PCCellStateOpen) {
         rect.origin.x = origin;
     }
+    
+    rect.size = self.topView.frame.size;
 
     [UIView animateWithDuration:duration
                           delay:0.0f

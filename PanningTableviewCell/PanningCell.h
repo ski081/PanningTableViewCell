@@ -26,7 +26,8 @@ typedef NS_ENUM(NSUInteger, PCCellState){
 
 @interface PanningCell : UITableViewCell<UIGestureRecognizerDelegate>
 
-@property(strong,nonatomic) UIView                      *drawerView;
+@property(strong,nonatomic) UIView                      *backingView;
+@property(strong,nonatomic) UIView                      *topView;
 @property(strong,nonatomic) UILabel                     *titleLabel;
 @property(assign,nonatomic) PCSwipeTableViewCellMode    mode;
 
