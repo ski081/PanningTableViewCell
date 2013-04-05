@@ -6,10 +6,10 @@
 #
 Pod::Spec.new do |s|
   s.name         = "PanningTableViewCell"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A TableViewCell that implements a right swipe-to-reveal"
   s.homepage     = "https://github.com/ski081/PanningTableViewCell"
-  s.license      = 'MIT (example)'
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Mark Struzinski" => "ski081@gmail.com" }
   s.source       = { :git => "git@github.com:ski081/PanningTableViewCell.git", :tag => "0.0.1" }
   s.platform     = :ios, '6.0'
