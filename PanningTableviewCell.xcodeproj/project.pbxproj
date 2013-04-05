@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0530B35170DCA7F004B788D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0530B34170DCA7F004B788D /* UIKit.framework */; };
+		E0530B37170DCA7F004B788D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0530B36170DCA7F004B788D /* Foundation.framework */; };
+		E0530B39170DCA7F004B788D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0530B38170DCA7F004B788D /* CoreGraphics.framework */; };
+		E0530B3F170DCA7F004B788D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0530B3D170DCA7F004B788D /* InfoPlist.strings */; };
+		E0530B41170DCA7F004B788D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0530B40170DCA7F004B788D /* main.m */; };
+		E0530B45170DCA7F004B788D /* BSZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0530B44170DCA7F004B788D /* BSZAppDelegate.m */; };
+		E0530B47170DCA7F004B788D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E0530B46170DCA7F004B788D /* Default.png */; };
+		E0530B49170DCA7F004B788D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0530B48170DCA7F004B788D /* Default@2x.png */; };
+		E0530B4B170DCA7F004B788D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0530B4A170DCA7F004B788D /* Default-568h@2x.png */; };
+		E0530B4E170DCA7F004B788D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0530B4C170DCA7F004B788D /* MainStoryboard.storyboard */; };
+		E0530B51170DCA7F004B788D /* BSZMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0530B50170DCA7F004B788D /* BSZMasterViewController.m */; };
+		E0530B5D170DCC1B004B788D /* PanningCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0530B5C170DCC1B004B788D /* PanningCell.m */; };
+		E0530B60170DD1D1004B788D /* BSZPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = E0530B5F170DD1D1004B788D /* BSZPanGestureRecognizer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E0530B31170DCA7F004B788D /* PanningTableviewCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanningTableviewCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0530B34170DCA7F004B788D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E0530B36170DCA7F004B788D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E0530B38170DCA7F004B788D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E0530B3C170DCA7F004B788D /* PanningTableviewCell-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PanningTableviewCell-Info.plist"; sourceTree = "<group>"; };
+		E0530B3E170DCA7F004B788D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0530B40170DCA7F004B788D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E0530B42170DCA7F004B788D /* PanningTableviewCell-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PanningTableviewCell-Prefix.pch"; sourceTree = "<group>"; };
+		E0530B43170DCA7F004B788D /* BSZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSZAppDelegate.h; sourceTree = "<group>"; };
+		E0530B44170DCA7F004B788D /* BSZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSZAppDelegate.m; sourceTree = "<group>"; };
+		E0530B46170DCA7F004B788D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E0530B48170DCA7F004B788D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E0530B4A170DCA7F004B788D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E0530B4D170DCA7F004B788D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E0530B4F170DCA7F004B788D /* BSZMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSZMasterViewController.h; sourceTree = "<group>"; };
+		E0530B50170DCA7F004B788D /* BSZMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSZMasterViewController.m; sourceTree = "<group>"; };
+		E0530B5B170DCC1B004B788D /* PanningCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanningCell.h; sourceTree = "<group>"; };
+		E0530B5C170DCC1B004B788D /* PanningCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanningCell.m; sourceTree = "<group>"; };
+		E0530B5E170DD1D1004B788D /* BSZPanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSZPanGestureRecognizer.h; sourceTree = "<group>"; };
+		E0530B5F170DD1D1004B788D /* BSZPanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSZPanGestureRecognizer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0530B2E170DCA7F004B788D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0530B35170DCA7F004B788D /* UIKit.framework in Frameworks */,
+				E0530B37170DCA7F004B788D /* Foundation.framework in Frameworks */,
+				E0530B39170DCA7F004B788D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0530B28170DCA7F004B788D = {
+			isa = PBXGroup;
+			children = (
+				E0530B3A170DCA7F004B788D /* PanningTableviewCell */,
+				E0530B33170DCA7F004B788D /* Frameworks */,
+				E0530B32170DCA7F004B788D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0530B32170DCA7F004B788D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0530B31170DCA7F004B788D /* PanningTableviewCell.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0530B33170DCA7F004B788D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0530B34170DCA7F004B788D /* UIKit.framework */,
+				E0530B36170DCA7F004B788D /* Foundation.framework */,
+				E0530B38170DCA7F004B788D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0530B3A170DCA7F004B788D /* PanningTableviewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E0530B5A170DCBEB004B788D /* TableView Cells */,
+				E0530B43170DCA7F004B788D /* BSZAppDelegate.h */,
+				E0530B44170DCA7F004B788D /* BSZAppDelegate.m */,
+				E0530B4C170DCA7F004B788D /* MainStoryboard.storyboard */,
+				E0530B4F170DCA7F004B788D /* BSZMasterViewController.h */,
+				E0530B50170DCA7F004B788D /* BSZMasterViewController.m */,
+				E0530B3B170DCA7F004B788D /* Supporting Files */,
+			);
+			path = PanningTableviewCell;
+			sourceTree = "<group>";
+		};
+		E0530B3B170DCA7F004B788D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0530B3C170DCA7F004B788D /* PanningTableviewCell-Info.plist */,
+				E0530B3D170DCA7F004B788D /* InfoPlist.strings */,
+				E0530B40170DCA7F004B788D /* main.m */,
+				E0530B42170DCA7F004B788D /* PanningTableviewCell-Prefix.pch */,
+				E0530B46170DCA7F004B788D /* Default.png */,
+				E0530B48170DCA7F004B788D /* Default@2x.png */,
+				E0530B4A170DCA7F004B788D /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0530B5A170DCBEB004B788D /* TableView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E0530B5B170DCC1B004B788D /* PanningCell.h */,
+				E0530B5C170DCC1B004B788D /* PanningCell.m */,
+				E0530B5E170DD1D1004B788D /* BSZPanGestureRecognizer.h */,
+				E0530B5F170DD1D1004B788D /* BSZPanGestureRecognizer.m */,
+			);
+			name = "TableView Cells";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0530B30170DCA7F004B788D /* PanningTableviewCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0530B57170DCA7F004B788D /* Build configuration list for PBXNativeTarget "PanningTableviewCell" */;
+			buildPhases = (
+				E0530B2D170DCA7F004B788D /* Sources */,
+				E0530B2E170DCA7F004B788D /* Frameworks */,
+				E0530B2F170DCA7F004B788D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PanningTableviewCell;
+			productName = PanningTableviewCell;
+			productReference = E0530B31170DCA7F004B788D /* PanningTableviewCell.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0530B29170DCA7F004B788D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BSZ;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "BobStruz Software";
+			};
+			buildConfigurationList = E0530B2C170DCA7F004B788D /* Build configuration list for PBXProject "PanningTableviewCell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E0530B28170DCA7F004B788D;
+			productRefGroup = E0530B32170DCA7F004B788D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0530B30170DCA7F004B788D /* PanningTableviewCell */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0530B2F170DCA7F004B788D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0530B3F170DCA7F004B788D /* InfoPlist.strings in Resources */,
+				E0530B47170DCA7F004B788D /* Default.png in Resources */,
+				E0530B49170DCA7F004B788D /* Default@2x.png in Resources */,
+				E0530B4B170DCA7F004B788D /* Default-568h@2x.png in Resources */,
+				E0530B4E170DCA7F004B788D /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0530B2D170DCA7F004B788D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0530B41170DCA7F004B788D /* main.m in Sources */,
+				E0530B45170DCA7F004B788D /* BSZAppDelegate.m in Sources */,
+				E0530B51170DCA7F004B788D /* BSZMasterViewController.m in Sources */,
+				E0530B5D170DCC1B004B788D /* PanningCell.m in Sources */,
+				E0530B60170DD1D1004B788D /* BSZPanGestureRecognizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E0530B3D170DCA7F004B788D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0530B3E170DCA7F004B788D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E0530B4C170DCA7F004B788D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0530B4D170DCA7F004B788D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0530B55170DCA7F004B788D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E0530B56170DCA7F004B788D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0530B58170DCA7F004B788D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PanningTableviewCell/PanningTableviewCell-Prefix.pch";
+				INFOPLIST_FILE = "PanningTableviewCell/PanningTableviewCell-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E0530B59170DCA7F004B788D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PanningTableviewCell/PanningTableviewCell-Prefix.pch";
+				INFOPLIST_FILE = "PanningTableviewCell/PanningTableviewCell-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0530B2C170DCA7F004B788D /* Build configuration list for PBXProject "PanningTableviewCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0530B55170DCA7F004B788D /* Debug */,
+				E0530B56170DCA7F004B788D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0530B57170DCA7F004B788D /* Build configuration list for PBXNativeTarget "PanningTableviewCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0530B58170DCA7F004B788D /* Debug */,
+				E0530B59170DCA7F004B788D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0530B29170DCA7F004B788D /* Project object */;
+}
