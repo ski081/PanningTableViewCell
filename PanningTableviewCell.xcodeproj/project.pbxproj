@@ -17,9 +17,8 @@
 		E0530B49170DCA7F004B788D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0530B48170DCA7F004B788D /* Default@2x.png */; };
 		E0530B4B170DCA7F004B788D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0530B4A170DCA7F004B788D /* Default-568h@2x.png */; };
 		E0530B4E170DCA7F004B788D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0530B4C170DCA7F004B788D /* MainStoryboard.storyboard */; };
-		E0530B51170DCA7F004B788D /* BSZMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0530B50170DCA7F004B788D /* BSZMasterViewController.m */; };
-		E0530B5D170DCC1B004B788D /* PanningCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0530B5C170DCC1B004B788D /* PanningCell.m */; };
-		E0530B60170DD1D1004B788D /* BSZPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = E0530B5F170DD1D1004B788D /* BSZPanGestureRecognizer.m */; };
+		E0F86D74170F62150072B982 /* PanningCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F86D73170F62150072B982 /* PanningCell.m */; };
+		E0F86D78170F641E0072B982 /* BSZMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F86D77170F641E0072B982 /* BSZMasterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,12 +36,10 @@
 		E0530B48170DCA7F004B788D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E0530B4A170DCA7F004B788D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E0530B4D170DCA7F004B788D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		E0530B4F170DCA7F004B788D /* BSZMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSZMasterViewController.h; sourceTree = "<group>"; };
-		E0530B50170DCA7F004B788D /* BSZMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSZMasterViewController.m; sourceTree = "<group>"; };
-		E0530B5B170DCC1B004B788D /* PanningCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanningCell.h; sourceTree = "<group>"; };
-		E0530B5C170DCC1B004B788D /* PanningCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanningCell.m; sourceTree = "<group>"; };
-		E0530B5E170DD1D1004B788D /* BSZPanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSZPanGestureRecognizer.h; sourceTree = "<group>"; };
-		E0530B5F170DD1D1004B788D /* BSZPanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSZPanGestureRecognizer.m; sourceTree = "<group>"; };
+		E0F86D72170F62150072B982 /* PanningCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanningCell.h; sourceTree = "<group>"; };
+		E0F86D73170F62150072B982 /* PanningCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanningCell.m; sourceTree = "<group>"; };
+		E0F86D76170F641E0072B982 /* BSZMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSZMasterViewController.h; sourceTree = "<group>"; };
+		E0F86D77170F641E0072B982 /* BSZMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSZMasterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,12 +86,11 @@
 		E0530B3A170DCA7F004B788D /* PanningTableviewCell */ = {
 			isa = PBXGroup;
 			children = (
-				E0530B5A170DCBEB004B788D /* TableView Cells */,
 				E0530B43170DCA7F004B788D /* BSZAppDelegate.h */,
 				E0530B44170DCA7F004B788D /* BSZAppDelegate.m */,
+				E0F86D75170F63FC0072B982 /* ViewControllers */,
+				E0F86D71170F62150072B982 /* PanningTableViewCell */,
 				E0530B4C170DCA7F004B788D /* MainStoryboard.storyboard */,
-				E0530B4F170DCA7F004B788D /* BSZMasterViewController.h */,
-				E0530B50170DCA7F004B788D /* BSZMasterViewController.m */,
 				E0530B3B170DCA7F004B788D /* Supporting Files */,
 			);
 			path = PanningTableviewCell;
@@ -114,15 +110,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E0530B5A170DCBEB004B788D /* TableView Cells */ = {
+		E0F86D71170F62150072B982 /* PanningTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				E0530B5B170DCC1B004B788D /* PanningCell.h */,
-				E0530B5C170DCC1B004B788D /* PanningCell.m */,
-				E0530B5E170DD1D1004B788D /* BSZPanGestureRecognizer.h */,
-				E0530B5F170DD1D1004B788D /* BSZPanGestureRecognizer.m */,
+				E0F86D72170F62150072B982 /* PanningCell.h */,
+				E0F86D73170F62150072B982 /* PanningCell.m */,
 			);
-			name = "TableView Cells";
+			path = PanningTableViewCell;
+			sourceTree = "<group>";
+		};
+		E0F86D75170F63FC0072B982 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E0F86D76170F641E0072B982 /* BSZMasterViewController.h */,
+				E0F86D77170F641E0072B982 /* BSZMasterViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,9 +197,8 @@
 			files = (
 				E0530B41170DCA7F004B788D /* main.m in Sources */,
 				E0530B45170DCA7F004B788D /* BSZAppDelegate.m in Sources */,
-				E0530B51170DCA7F004B788D /* BSZMasterViewController.m in Sources */,
-				E0530B5D170DCC1B004B788D /* PanningCell.m in Sources */,
-				E0530B60170DD1D1004B788D /* BSZPanGestureRecognizer.m in Sources */,
+				E0F86D74170F62150072B982 /* PanningCell.m in Sources */,
+				E0F86D78170F641E0072B982 /* BSZMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +321,7 @@
 				E0530B59170DCA7F004B788D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
